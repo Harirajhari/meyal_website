@@ -6,10 +6,13 @@ import App from "./App";
 // import "../public/assets/css/owl.carousel.css";
 // import "../public/assets/css/vipodha_megamenu.css";
 import "./index.css";
+import { CurrencyProvider } from "./CurrencyContext";
 
 const root = createRoot(document.getElementById("root")); // ✅ Correct usage
 root.render(
   <StrictMode>
-    <App />
+    <CurrencyProvider>
+      <App />
+    </CurrencyProvider>,
   </StrictMode>
 );

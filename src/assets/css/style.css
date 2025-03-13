@@ -4,9 +4,9 @@
 }
 :root {
     --primary-color: #373737;
-    --primary-hover-color: #8eab92;
+    --primary-hover-color: #dc4298;
     --secondary-color: #ffffff;
-    --secondary-light-color: #929292;
+    --secondary-light-color: #dc4298;
     --background-color: #efefef;
     --border-color: #d9d9d9;
 }
@@ -759,7 +759,7 @@ header.header-fixed {
 }
 #logo img {
     margin: auto;
-    width: 100%;
+    width: 60%;
     max-width: 160px !important;
     border-radius: 0;
 }
@@ -1845,7 +1845,7 @@ Testimonial Section
     overflow: hidden;
     text-align: center;
     padding: 50px 0;
-    background: url(assets/images/testimonial/testimonial-bg.png) center center no-repeat;
+    background: url(assets/images/testimonial/bg-test.png) center center no-repeat;
     background-size: cover;
     color: var(--secondary-color);
     z-index: 1;
