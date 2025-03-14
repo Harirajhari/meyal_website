@@ -1,3 +1,7 @@
+.shop-text, .home-text{
+    font-size: 24px;
+}
+
 .header-section{
     .vipodha_megamenu {
         display: flex;  /* Aligns items in a row */
@@ -45,6 +49,7 @@
         transform: translateY(0);
     }
 }
+
 }
 
 .blog-section{
@@ -79,6 +84,7 @@
     .shop-text:hover {
         color: #d12a8b; /* Match theme color */
         text-decoration: none;
+       
     }
     .sub-menu {
         position: absolute;
@@ -110,6 +116,7 @@
         padding: 15px;
         margin: 15px;
         border-radius: 5px;
+        border: 1px solid #d12a8b;
     }
     
     .sub-menu .static-menu .menu {
@@ -240,7 +247,18 @@
     .search-container:hover::after {
         color: #f93a0b;
     }
-        
+
+    @media (max-width: 768px) {
+        .search-container {
+            max-width: 200px; /* Reduce width on mobile */
+        }
+    
+        .textbox {
+            padding: 10px 40px 10px 10px; /* Adjust padding */
+            font-size: 14px; /* Smaller text */
+        }
+    }
+    
 }
 
 

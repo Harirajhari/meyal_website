@@ -11,9 +11,11 @@ import "./assets/css/vipodha_megamenu.css";
 import "./assets/css/style.css";
 import Footer from "./component/Header/Footer";
 import CartPage from "./component/Pages/CartPage";
-import LoginPage from "./component/Pages/LoginPage";
-import RegisterPage from "./component/Pages/RegisterPage";
+import LoginPage from "./component/Pages/RegAndLogin/LoginPage";
+import RegisterPage from "./component/Pages/RegAndLogin/RegisterPage";
 import SingleSareePage from "./component/Pages/SingleSareePage";
+import ProtectedRoute from "./ProtectedRoute";
+import { ToastContainer } from "react-toastify";
 
 // ✅ 404 Not Found Component
 const NotFound = () => (
@@ -41,7 +43,12 @@ const AppLayout = () => {
         <Route path="/cart" element={<CartPage />} /> {/* ✅ Add Cart Page Route */}
         <Route path="/login" element={<LoginPage />} /> {/* ✅ Add Login Page Route */}
         <Route path="/register" element={<RegisterPage />} /> {/* ✅ Add Register Page Route */}
+       
+
+        <Route element={<ProtectedRoute />}>
         <Route path="/shop/SingplesareePage/:id" element={<SingleSareePage />} />
+        </Route>
+
 
         {/* ✅ Catch-All Route for 404 Page */}
         <Route path="*" element={<NotFound />} />
@@ -54,6 +61,7 @@ const AppLayout = () => {
 function App() {
   return (
     <Router>
+         <ToastContainer />
       <AppLayout />
     </Router>
   );

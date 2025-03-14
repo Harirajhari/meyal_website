@@ -8,7 +8,7 @@ const Home = () => {
       <li className="home current-active active-first">
         <Link to="/">
           <span>
-            <strong>Home</strong>
+            <strong className="home-text">Home</strong>
           </span>
         </Link>
       </li>

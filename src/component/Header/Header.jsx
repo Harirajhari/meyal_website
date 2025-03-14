@@ -10,41 +10,7 @@ import Card from "./Button/Card";
 
 
 const Header = () => {
-
-    const menuData = [
-        {
-          title: "Home",
-          link: "index.html",
-          className: "home current-active active-first",
-        },
-        {
-          title: "Shop",
-          link: "shop.html",
-          className: "with-sub-menu click",
-          subMenu: [
-            {
-              title: "Banarasi Saree",
-              link: "category.html",
-              items: [
-                { name: "Net Saree", link: "category.html" },
-                { name: "Kasavu Saree", link: "category.html" },
-                { name: "Patola Saree", link: "category.html" },
-              ],
-            },
-            {
-              title: "Chanderi Saree",
-              link: "category.html",
-              items: [
-                { name: "Gadwal Saree", link: "category.html" },
-                { name: "Clove", link: "category.html" },
-                { name: "Phulkari Saree", link: "category.html" },
-              ],
-            },
-          ],
-        },
-      ];
             
-
     const [isSticky, setIsSticky] = useState(false);
 
 
@@ -72,6 +38,7 @@ const Header = () => {
                 <header className={`main-header ${isSticky ? "sticky" : ""}`}>
                     <div className="container">
                         <div className="header-inner">
+                            
                             <div className="header-left">
                                 <div id="logo">
                                     <a href="index.html">
